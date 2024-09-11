@@ -1,0 +1,104 @@
+#section-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFFFFF;
+    padding: 50px 20px;
+    position: relative;
+}
+
+/* Contenedor del contenido (imagen y texto) */
+.section-1__info {
+    display: flex;
+    align-items: center; /* Alinea verticalmente el contenido */
+    margin: 25px 100px;
+    background: linear-gradient(313.18deg, #BD35D3 3.28%, #491B6D 97.04%);
+    border-radius: 48px 48px 300px 48px;
+    position: relative; /* Asegura que los elementos posicionados absolutamente se alineen respecto a este contenedor */
+    overflow: hidden; /* Oculta cualquier contenido desbordante */
+    padding: 20px; /* Agrega un poco de espacio interno */
+}
+
+.section-1__info img {
+    max-height: 100%; /* Ajusta la altura de la imagen al contenedor */
+    max-width: 50%; /* Opcional: Limita el ancho de la imagen */
+     /* Bordes redondeados para la imagen de perfil */
+}
+
+/* Texto descriptivo */
+.section-1__info h2 {
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #FFFFFF; /* Ajusta el color del texto si es necesario */
+}
+
+.section-1__info p {
+    font-size: 18px;
+    line-height: 1.6;
+    max-width: 500px;
+    margin: 0;
+    color: #FFFFFF; /* Ajusta el color del texto si es necesario */
+}
+
+/* Contenedor del texto */
+.section-1__info .text {
+    z-index: 2;
+    text-align: left;
+    padding: 20px; /* Agrega espacio alrededor del texto */
+}
+
+/* Imagen de la nebulosa */
+.section-1__info .nebulosa {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: auto;
+    z-index: 1;
+}
+
+/* Imágenes de Saturno y luna morada */
+.section-1__info .planetas {
+    position: absolute;
+    bottom: -10px; /* Ajusta la posición desde el borde inferior */
+    left: -10px; /* Ajusta la posición desde el borde izquierdo */
+    display: flex;
+    gap: 10px;
+    z-index: 2;
+    padding: 10px;
+}
+
+.section-1__info .planetas img {
+    width: 100px; /* Ajusta el tamaño según sea necesario */
+    height: auto;
+}
+
+
+
+.section-1__info .text {
+    color: white;
+    max-width: 40%;
+    margin-left: 20px; /* Ajusta el margen izquierdo para mover el texto a la derecha */
+    font-size: 1.5rem; /* Aumenta el tamaño del texto */
+}
+
+.nebulosa {
+    position: absolute;
+    left: 0;
+    top: 50px;
+    width: 15%;
+    z-index: -1; /* Coloca la nebulosa detrás de la imagen */
+}
+
+.section-1__info > div:last-child {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+
+

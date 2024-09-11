@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.skill {
+    width: 160px;
+    height: 160px;
+    position: relative;
+}
+
+.outer {
+    height: 160px;
+    width: 160px;
+    border-radius: 50%;
+    padding: 20px;
+    box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
+                -6px -6px 10px -1px rgb(255, 255, 255, 0.7);
+}
+
+.inner {
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: inset 4px 4px 6px -1px rgba(0, 0, 0, 0.2),
+                inset -4px -4px 6px -1px rgba(255, 255, 255, 0.7),
+                -0.5px -0.5px 0px rgba(255, 255, 255, 1),
+                0.5px 0.5px 0px rgba(0, 0, 0, 0.15),
+                0px 12px 10px -10px rgba(0, 0, 0, 0.05);
+}
+
+#number, #number1, #number2, #number3 {
+    font-weight: 600;
+    color: #555;
+}
+
+circle {
+    fill: none;
+    stroke-width: 20px;
+    stroke-linecap: round;
+    stroke-dasharray: 440; /* Longitud completa de la circunferencia */
+    stroke-dashoffset: 440; /* Comienza vacío */
+}
+
+svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.circle-70 {
+    stroke: url(#GradientColor);
+}
+
+.circle-80 {
+    stroke: url(#GradientColor2);
+}
+
+.circle-90 {
+    stroke: url(#GradientColor3);
+}
+
+
+
+
+
+
+
+
+  
